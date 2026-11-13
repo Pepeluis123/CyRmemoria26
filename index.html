@@ -583,7 +583,7 @@ print("El resultado de la suma es:", resultado)</code></pre>
                     📚 Módulos Teóricos y Ejemplos Prácticos de Código
                 </h2>
                 <p class="text-slate-300 text-xs sm:text-sm mt-1 max-w-3xl">
-                    Explora los conceptos fundamentales de Lógica, C++, Python, HTML5, CSS y Estructuras de Control con ejemplos adaptados exactamente a tu nivel.
+                    Explora los conceptos fund    amentales de Lógica, C++, Python, HTML5, CSS y Estructuras de Control con ejemplos adaptados exactamente a tu nivel.
                 </p>
             </div>
 
@@ -745,7 +745,6 @@ print("El resultado de la suma es:", resultado)</code></pre>
             temas: { btn: document.getElementById("btn-tab-temas"), vista: document.getElementById("vista-temas") },
             comparativa: { btn: document.getElementById("btn-tab-comparativa"), vista: document.getElementById("vista-comparativa") },
             depuracion: { btn: document.getElementById("btn-tab-depuracion"), vista: document.getElementById("vista-depuracion") },
-            examen: { btn: document.getElementById("btn-tab-examen"), vista: document.getElementById("vista-examen") }
         };
 
         function cambiarVista(nombreVista) {
@@ -919,20 +918,6 @@ print("El resultado de la suma es:", resultado)</code></pre>
 
         // Cargar por defecto el primer subtema al abrir "Temario"
         cargarSubTema('logica');
-
-        function verificarExamen() {
-            const q1 = document.querySelector('input[name="q1"]:checked');
-            const res = document.getElementById("resultado-examen");
-            res.classList.remove("hidden");
-
-            if (q1 && q1.value === "b") {
-                res.textContent = "¡Correcto! El operador == realiza la comparación en C++ y Python.";
-                res.className = "text-xs font-bold text-emerald-400 mt-2";
-            } else {
-                res.textContent = "Incorrecto. Recuerda que = sirve para asignar y == sirve para comparar.";
-                res.className = "text-xs font-bold text-rose-400 mt-2";
-            }
-        }
     </script>
 </body>
 </html>
